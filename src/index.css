@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-newcom-bg: #090C0F;
+  --color-newcom-surface: #11161A;
+  --color-newcom-card: #171D22;
+  --color-newcom-border: #1D252B;
+  --color-newcom-green: #22C55E;
+  --color-newcom-green-light: #4ADE80;
+  --color-newcom-text: #FFFFFF;
+  --color-newcom-text-sec: #94A3B8;
+}
+
+@layer base {
+  body {
+    @apply bg-newcom-bg text-newcom-text;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1D252B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #26313A;
+}
+
